@@ -1,5 +1,5 @@
 const mongoose = require("mongoose") ;
-const url = "mongodb://0.0.0.0/food-order" ;
+const url = process.env.MONGODB_URL;
 
  connectDB = async () =>{
     await mongoose.connect(url).then(()=>
