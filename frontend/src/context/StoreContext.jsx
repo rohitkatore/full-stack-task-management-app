@@ -7,7 +7,7 @@ const StoreContextProvider = (props) => {
     const [food_list, setFoodList] = useState([]);
     const [cart=[], setCart] = useState([]);
     const [storedToken , setStoreToken] = useState(null);
-    const url = "http://localhost:3000";
+    const url = "https://full-stack-task-management-app-0t3v.onrender.com";
     const [initialFoodData, setInitialFoodData] = useState({
         name: '',
         category: 'Main Course',
