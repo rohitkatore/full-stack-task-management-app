@@ -1,7 +1,7 @@
 const userModel = require("../models/user.model") ;
 const jwt = require("jsonwebtoken") ;
 const validater = require("validator") ;
-const bycrypt = require("bcrypt") ;
+const bycrypt = require("bcryptjs") ;
 
 const createToken = (id) =>{ 
 return jwt.sign({id},process.env.JWT_SECRET,{expiresIn:"30d"}) ;
